@@ -7,7 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Product.delete_all
 
-Product.create(title: 'program Ruby 1.9', 
+5.times do  |n|
+Product.create(title: 'program Ruby 1.9'+ n.to_s,
         description: 
         %{<p>
           Ruby is the fastest growing and most exciting dynamic language
@@ -16,4 +17,5 @@ Product.create(title: 'program Ruby 1.9',
           </p>},
         image_url: 'ruby.jpg',
         price: 49.95)
+end
 #...........................................
